@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsCowCalf" targetNamespace="http://www.tempuri.org/dsCowCalf.xsd" xmlns:mstns="http://www.tempuri.org/dsCowCalf.xsd" xmlns="http://www.tempuri.org/dsCowCalf.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsCowCalf" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsCowCalf" msprop:Generator_DataSetName="dsCowCalf">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="cow" msprop:Generator_UserTableName="cow" msprop:Generator_RowDeletedName="cowRowDeleted" msprop:Generator_RowChangedName="cowRowChanged" msprop:Generator_RowClassName="cowRow" msprop:Generator_RowChangingName="cowRowChanging" msprop:Generator_RowEvArgName="cowRowChangeEvent" msprop:Generator_RowEvHandlerName="cowRowChangeEventHandler" msprop:Generator_TableClassName="cowDataTable" msprop:Generator_TableVarName="tablecow" msprop:Generator_RowDeletingName="cowRowDeleting" msprop:Generator_TablePropName="cow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="cow_number" msprop:Generator_UserColumnName="cow_number" msprop:Generator_ColumnPropNameInRow="cow_number" msprop:Generator_ColumnVarNameInTable="columncow_number" msprop:Generator_ColumnPropNameInTable="cow_numberColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="calf_group" msprop:Generator_UserColumnName="calf_group" msprop:Generator_ColumnPropNameInRow="calf_group" msprop:Generator_ColumnVarNameInTable="columncalf_group" msprop:Generator_ColumnPropNameInTable="calf_groupColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="id" msdata:AutoIncrementSeed="20" msprop:Generator_UserColumnName="id" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInTable="idColumn" type="xs:double" default="0" />
+              <xs:element name="owner_" msprop:Generator_UserColumnName="owner_" msprop:Generator_ColumnPropNameInRow="owner_" msprop:Generator_ColumnVarNameInTable="columnowner_" msprop:Generator_ColumnPropNameInTable="owner_Column" type="xs:string" minOccurs="0" />
+              <xs:element name="acitve" msprop:Generator_UserColumnName="acitve" msprop:Generator_ColumnPropNameInRow="acitve" msprop:Generator_ColumnVarNameInTable="columnacitve" msprop:Generator_ColumnPropNameInTable="acitveColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="inactiveda" msprop:Generator_UserColumnName="inactiveda" msprop:Generator_ColumnPropNameInRow="inactiveda" msprop:Generator_ColumnVarNameInTable="columninactiveda" msprop:Generator_ColumnPropNameInTable="inactivedaColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Cha" msdata:Caption="Characteristics" msprop:Generator_UserColumnName="Cha" msprop:Generator_ColumnPropNameInRow="Cha" msprop:Generator_ColumnVarNameInTable="columnCha" msprop:Generator_ColumnPropNameInTable="ChaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="note" msprop:Generator_UserColumnName="note" msprop:Generator_ColumnPropNameInRow="note" msprop:Generator_ColumnVarNameInTable="columnnote" msprop:Generator_ColumnPropNameInTable="noteColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="tobesold" msdata:Caption="To Be Sold" msprop:Generator_UserColumnName="tobesold" msprop:Generator_ColumnPropNameInRow="tobesold" msprop:Generator_ColumnVarNameInTable="columntobesold" msprop:Generator_ColumnPropNameInTable="tobesoldColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="dateofownership" msprop:Generator_UserColumnName="dateofownership" msprop:Generator_ColumnPropNameInRow="dateofownership" msprop:Generator_ColumnVarNameInTable="columndateofownership" msprop:Generator_ColumnPropNameInTable="dateofownershipColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="age" msdata:Caption="Age" msprop:Generator_UserColumnName="age" msprop:Generator_ColumnPropNameInRow="age" msprop:Generator_ColumnVarNameInTable="columnage" msprop:Generator_ColumnPropNameInTable="ageColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="calfnum" msprop:Generator_UserColumnName="calfnum" msprop:Generator_ColumnPropNameInRow="calfnum" msprop:Generator_ColumnVarNameInTable="columncalfnum" msprop:Generator_ColumnPropNameInTable="calfnumColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="calf" msprop:Generator_UserTableName="calf" msprop:Generator_RowDeletedName="calfRowDeleted" msprop:Generator_RowChangedName="calfRowChanged" msprop:Generator_RowClassName="calfRow" msprop:Generator_RowChangingName="calfRowChanging" msprop:Generator_RowEvArgName="calfRowChangeEvent" msprop:Generator_RowEvHandlerName="calfRowChangeEventHandler" msprop:Generator_TableClassName="calfDataTable" msprop:Generator_TableVarName="tablecalf" msprop:Generator_RowDeletingName="calfRowDeleting" msprop:Generator_TablePropName="calf">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="calfno" msdata:Caption="Calf Number" msprop:Generator_UserColumnName="calfno" msprop:Generator_ColumnPropNameInRow="calfno" msprop:Generator_ColumnVarNameInTable="columncalfno" msprop:Generator_ColumnPropNameInTable="calfnoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="dob" msdata:Caption="DOB" msprop:Generator_UserColumnName="dob" msprop:Generator_ColumnPropNameInRow="dob" msprop:Generator_ColumnVarNameInTable="columndob" msprop:Generator_ColumnPropNameInTable="dobColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="owner" msdata:Caption="Ownerr" msprop:Generator_UserColumnName="owner" msprop:Generator_ColumnPropNameInRow="owner" msprop:Generator_ColumnVarNameInTable="columnowner" msprop:Generator_ColumnPropNameInTable="ownerColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="sex" msdata:Caption="Sex" msprop:Generator_UserColumnName="sex" msprop:Generator_ColumnPropNameInRow="sex" msprop:Generator_ColumnVarNameInTable="columnsex" msprop:Generator_ColumnPropNameInTable="sexColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Id" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="Id" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInTable="IdColumn" type="xs:int" />
+              <xs:element name="cowid" msprop:Generator_UserColumnName="cowid" msprop:Generator_ColumnPropNameInRow="cowid" msprop:Generator_ColumnVarNameInTable="columncowid" msprop:Generator_ColumnPropNameInTable="cowidColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="charr" msprop:Generator_UserColumnName="charr" msprop:Generator_ColumnPropNameInRow="charr" msprop:Generator_ColumnVarNameInTable="columncharr" msprop:Generator_ColumnPropNameInTable="charrColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="note" msdata:Caption="Note" msprop:Generator_UserColumnName="note" msprop:Generator_ColumnPropNameInRow="note" msprop:Generator_ColumnVarNameInTable="columnnote" msprop:Generator_ColumnPropNameInTable="noteColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="calf_group" msdata:Caption="Group" msprop:Generator_UserColumnName="calf_group" msprop:Generator_ColumnPropNameInRow="calf_group" msprop:Generator_ColumnVarNameInTable="columncalf_group" msprop:Generator_ColumnPropNameInTable="calf_groupColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="active" msprop:Generator_UserColumnName="active" msprop:Generator_ColumnPropNameInRow="active" msprop:Generator_ColumnVarNameInTable="columnactive" msprop:Generator_ColumnPropNameInTable="activeColumn" type="xs:string" />
+              <xs:element name="sf" msprop:Generator_UserColumnName="sf" msprop:Generator_ColumnPropNameInRow="sf" msprop:Generator_ColumnVarNameInTable="columnsf" msprop:Generator_ColumnPropNameInTable="sfColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:cow" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+    <xs:unique name="calf_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:calf" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="cowcalf" msdata:parent="cow" msdata:child="calf" msdata:parentkey="id" msdata:childkey="cowid" msprop:Generator_UserRelationName="cowcalf" msprop:Generator_RelationVarName="relationcowcalf" msprop:Generator_UserChildTable="calf" msprop:Generator_UserParentTable="cow" msprop:Generator_ParentPropName="cowRow" msprop:Generator_ChildPropName="GetcalfRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

@@ -1,0 +1,494 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{37925160-F0A3-42ED-993F-BFC8942CEA46}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Cattle.My.MyApplication</StartupObject>
+    <RootNamespace>Cattle</RootNamespace>
+    <AssemblyName>Cattle</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Cattle.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Cattle.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BaseFormLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\BaseFormLibrary\BaseFormLibrary\bin\Debug\BaseFormLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Data.Odbc, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="MySql.Data, Version=6.4.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector Net 6.4.5\Assemblies\v4.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="BaseFormLibrary" />
+    <Import Include="Cattle" />
+    <Import Include="Cattle.DcalfTableAdapters" />
+    <Import Include="Cattle.DCowTableAdapters" />
+    <Import Include="Cattle.FormHandler" />
+    <Import Include="Cattle.My" />
+    <Import Include="Cattle.My.Resources" />
+    <Import Include="Microsoft" />
+    <Import Include="Microsoft.Data.Odbc" />
+    <Import Include="Microsoft.Reporting.WinForms" />
+    <Import Include="Microsoft.ReportingServices" />
+    <Import Include="Microsoft.ReportingServices.Diagnostics" />
+    <Import Include="Microsoft.ReportingServices.Diagnostics.Utilities" />
+    <Import Include="Microsoft.SqlServer" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="MySql" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CattleClasses\FarmForm.Designer.vb">
+      <DependentUpon>FarmForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CattleClasses\FarmForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CattleClasses\ParentForm.designer.vb">
+      <DependentUpon>ParentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CattleClasses\ParentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\BaseForm.designer.vb">
+      <DependentUpon>BaseForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\BaseForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\FormHandler.vb" />
+    <Compile Include="DataSets\Dcalf.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dcalf.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\Dcalf.vb">
+      <DependentUpon>Dcalf.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\DCow.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DCow.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\DCow.vb">
+      <DependentUpon>DCow.xsd</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSets\dsCalf.designer.vb">
+      <DependentUpon>dsCalf.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataSets\dsCalf.vb">
+      <DependentUpon>dsCalf.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\dsCow.designer.vb">
+      <DependentUpon>dsCow.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataSets\dsCow.vb">
+      <DependentUpon>dsCow.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCalfEdit.Designer.vb">
+      <DependentUpon>frmCalfEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCalfEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCalfNew.Designer.vb">
+      <DependentUpon>frmCalfNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCalfNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCalfQuery.Designer.vb">
+      <DependentUpon>frmCalfQuery.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCalfQuery.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmcharr.Designer.vb">
+      <DependentUpon>frmcharr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmcharr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCow.designer.vb">
+      <DependentUpon>frmCow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCowQuery.Designer.vb">
+      <DependentUpon>frmCowQuery.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCowQuery.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmEditCow.Designer.vb">
+      <DependentUpon>frmEditCow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmEditCow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmgestation.Designer.vb">
+      <DependentUpon>frmgestation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmgestation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmlogin.Designer.vb">
+      <DependentUpon>frmlogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmlogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMain.designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmNcalfQuery.Designer.vb">
+      <DependentUpon>frmNcalfQuery.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmNcalfQuery.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmNewCow.Designer.vb">
+      <DependentUpon>frmNewCow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmNewCow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmnote.designer.vb">
+      <DependentUpon>frmnote.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmnote.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmsort.Designer.vb">
+      <DependentUpon>frmsort.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmsort.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reports\CrystalReport1.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CattleClasses\FarmForm.resx">
+      <DependentUpon>FarmForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CattleClasses\ParentForm.resx">
+      <DependentUpon>ParentForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes\BaseForm.resx">
+      <DependentUpon>BaseForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCalfEdit.resx">
+      <DependentUpon>frmCalfEdit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCalfNew.resx">
+      <DependentUpon>frmCalfNew.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCalfQuery.resx">
+      <DependentUpon>frmCalfQuery.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmcharr.resx">
+      <DependentUpon>frmcharr.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCow.resx">
+      <DependentUpon>frmCow.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCowQuery.resx">
+      <DependentUpon>frmCowQuery.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEditCow.resx">
+      <DependentUpon>frmEditCow.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmgestation.resx">
+      <DependentUpon>frmgestation.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmlogin.resx">
+      <DependentUpon>frmlogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmNcalfQuery.resx">
+      <DependentUpon>frmNcalfQuery.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmNewCow.resx">
+      <DependentUpon>frmNewCow.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmnote.resx">
+      <DependentUpon>frmnote.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmsort.resx">
+      <DependentUpon>frmsort.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CalfQuery.rdlc" />
+    <EmbeddedResource Include="Reports\CowQuery.rdlc" />
+    <EmbeddedResource Include="Reports\CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Report1.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Forms\Resources\app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Forms\Resources\animal2.ico" />
+    <Content Include="Forms\Resources\cow1.ico" />
+    <Content Include="Forms\Resources\editcow.ico" />
+    <Content Include="Forms\Resources\editcow1.ico" />
+    <Content Include="Forms\Resources\FILTER.BMP" />
+    <None Include="app.config" />
+    <None Include="DataSets\Dcalf.xsc">
+      <DependentUpon>Dcalf.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\Dcalf.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Dcalf.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSets\Dcalf.xss">
+      <DependentUpon>Dcalf.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\Dcalf.xsx">
+      <DependentUpon>Dcalf.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DCow.xsc">
+      <DependentUpon>DCow.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DCow.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DCow.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSets\DCow.xss">
+      <DependentUpon>DCow.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DCow.xsx">
+      <DependentUpon>DCow.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\dsCalf.xsc">
+      <DependentUpon>dsCalf.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\dsCalf.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCalf.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSets\dsCalf.xss">
+      <DependentUpon>dsCalf.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\dsCalf.xsx">
+      <DependentUpon>dsCalf.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\dsCow.xsc">
+      <DependentUpon>dsCow.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\dsCow.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCow.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSets\dsCow.xss">
+      <DependentUpon>dsCow.xsd</DependentUpon>
+    </None>
+    <None Include="Forms\Resources\Filter.bmp.bmp" />
+    <Content Include="Forms\Resources\filteroff.bmp" />
+    <None Include="Resources\FILTER.BMP" />
+    <None Include="Icons\FILTER.BMP" />
+    <None Include="Forms\Resources\Image1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="IasHelperLib">
+      <Guid>{6BC096BB-0CE6-11D1-BAAE-00C04FC2E20D}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\DataSources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
